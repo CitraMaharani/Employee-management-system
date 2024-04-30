@@ -51,17 +51,17 @@ require_once "include/header.php";
                 <div class="card-body">
                 <h2 class="text-center mb-4"><?php echo $name; ?> </h2>
                     <p class="card-text">Email: <?php echo $_SESSION["email_emp"] ?> </p>
-                    <p class="card-text">Employee Id: <?php echo $id ?> </p>
-                    <p class="card-text">Gender: <?php echo $gender ?> </p>
-                    <p class="card-text">Age: <?php echo $age; ?> 
+                    <p class="card-text">Id Karyawan: <?php echo $id ?> </p>
+                    <p class="card-text">Jenis Kelamin: <?php echo $gender ?> </p>
+                    <p class="card-text">Umur: <?php echo $age; ?> 
                     </p>
-                    <p class="card-text">Date of Birth: <?php echo $dob; ?> </p>
-                    <p class="card-text">Salary:  Rp.  <?php echo $salary ; ?> </p>
+                    <p class="card-text">Tanggal Lahir: <?php echo $dob; ?> </p>
+                    <p class="card-text">gaji:  Rp.  <?php echo $salary ; ?> </p>
                     
                     <p class="text-center">
-                    <a href="edit-profile.php" class="btn btn-outline-primary">Edit Profile</a>
-                    <a href="change-password.php" class="btn btn-outline-primary">Change Password</a>
-                    <a href="profile-photo.php" class="mt-2 btn btn-outline-primary">Change profile photo</a>
+                    <a href="edit-profile.php" class="btn btn-outline-primary">Edit Profil</a>
+                    <a href="change-password.php" class="btn btn-outline-primary">Ganti Password</a>
+                    <a href="profile-photo.php" class="mt-2 btn btn-outline-primary">Edit Foto Profil</a>
                     </p>
                 </div>
             </div>

@@ -142,13 +142,13 @@
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Other" ){ echo "checked"; } ?>  value="Other">
-                                    <label class="form-check-label" >Lain-lain</label>
+                                    <label class="form-check-label" >Lainnya</label>
                                 </div>
 
                                
                                 <br>
 
-                                <button type="submit" class="btn btn-primary btn-block">Add</button>
+                                <button type="submit" class="btn btn-primary btn-block">Tambah</button>
                                   </form>
                             </div>
                         </div>

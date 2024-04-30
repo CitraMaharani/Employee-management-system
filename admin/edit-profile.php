@@ -63,7 +63,7 @@
                 $r = mysqli_query($conn , $sql_select_query);
 
                 if( mysqli_num_rows($r) > 0 ){
-                    $emailErr = "<p style='color:red'> * Email Already Register</p>";
+                    $emailErr = "<p style='color:red'> * Email Sudah Digunakanr</p>";
                 } else{
 
                     $sql = "UPDATE admin SET name = '$name', email = '$email', dob = '$dob', gender= '$gender' WHERE email='$_SESSION[email]' ";
@@ -75,8 +75,8 @@
                                 $('#showModal').modal('show');
                                 $('#modalHead').hide();
                                 $('#linkBtn').attr('href', 'profile.php');
-                                $('#linkBtn').text('View Profile');
-                                $('#addMsg').text('Profile Edited Successfully!!');
+                                $('#linkBtn').text('Tampilkan Profil');
+                                $('#addMsg').text('Profil Berhasil Diedit!!');
                                 $('#closeBtn').hide();
                             })
                         </script>
@@ -98,7 +98,7 @@
                     <div class="form-input-content">
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5 shadow">                       
-                                    <h4 class="text-center">Edit Your Profile</h4>
+                                    <h4 class="text-center">Edit Profil Anda</h4>
                                 <form method="POST" action=" <?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                             
                                 <div class="form-group">
@@ -125,11 +125,11 @@
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Male" ){ echo "checked"; } ?>  value="Male"  selected>
-                                    <label class="form-check-label" >Laki-laki</label>
+                                    <label class="form-check-label" >Pria</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Female" ){ echo "checked"; } ?>  value="Female">
-                                    <label class="form-check-label" >wanita</label>
+                                    <label class="form-check-label" >Wanita</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Other" ){ echo "checked"; } ?>  value="Other">
@@ -142,7 +142,7 @@
                                    <input type="submit" value="Save Changes" class="btn btn-primary w-20 " name="save_changes" >        
                                     </div>
                                     <div class="input-group">
-                                         <a href="profile.php" class="btn btn-primary w-20">Close</a>
+                                         <a href="profile.php" class="btn btn-primary w-20">Tutup</a>
                                     </div>
                                 </div>
                                   </form>

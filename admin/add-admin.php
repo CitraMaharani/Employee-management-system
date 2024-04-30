@@ -91,11 +91,11 @@
                     <div class="form-input-content">
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5 shadow">                       
-                                    <h4 class="text-center">Add New Admin</h4>
+                                    <h4 class="text-center">Tambahkan Admin</h4>
                                 <form method="POST" action=" <?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                             
                                 <div class="form-group">
-                                    <label >Full Name :</label>
+                                    <label >nama Lengkap :</label>
                                     <input type="text" class="form-control" value="<?php echo $name; ?>"  name="name" >
                                    <?php echo $nameErr; ?>
                                 </div>
@@ -114,29 +114,29 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label >Date-of-Birth :</label>
+                                    <label >Tanggal Lahir :</label>
                                     <input type="date" class="form-control" value="<?php echo $dob; ?>" name="dob" >  
                                    
                                 </div>
 
                                 <div class="form-group form-check form-check-inline">
-                                    <label class="form-check-label" >Gender :</label>
+                                    <label class="form-check-label" >Jenis Kelamin :</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Male" ){ echo "checked"; } ?>  value="Male"  selected>
-                                    <label class="form-check-label" >Male</label>
+                                    <label class="form-check-label" >Pria</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Female" ){ echo "checked"; } ?>  value="Female">
-                                    <label class="form-check-label" >Female</label>
+                                    <label class="form-check-label" >Wanita</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Other" ){ echo "checked"; } ?>  value="Other">
-                                    <label class="form-check-label" >Other</label>
+                                    <label class="form-check-label" >lainnya</label>
                                 </div>
                                 <br>
 
-                                <button type="submit" class="btn btn-primary btn-block">Add</button>
+                                <button type="submit" class="btn btn-primary btn-block">Tambah</button>
                                   </form>
                             </div>
                         </div>

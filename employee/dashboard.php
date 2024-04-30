@@ -99,11 +99,11 @@ require_once "include/header.php";
         <div class="col-4">
             <div class="card shadow " style="width: 18rem;">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center"> <b>Applied leaves</b> </li>
-                    <li class="list-group-item">Total Accepted  : <?php echo $total_accepted;  ?> </li>
-                    <li class="list-group-item">Total Canceled  : <?php echo $total_canceled; ?> </li>
-                    <li class="list-group-item">Total Pending  : <?php echo $total_pending; ?> </li>
-                    <li class="list-group-item">Total Applied  : <?php echo $total_applied; ?> </li>
+                    <li class="list-group-item text-center"> <b>Pengajuan Cuti</b> </li>
+                    <li class="list-group-item">Total Disetujui  : <?php echo $total_accepted;  ?> </li>
+                    <li class="list-group-item">Total Dibatalkan  : <?php echo $total_canceled; ?> </li>
+                    <li class="list-group-item">Total Antrian  : <?php echo $total_pending; ?> </li>
+                    <li class="list-group-item">Total Diajukan  : <?php echo $total_applied; ?> </li>
                 </ul>
             </div>
         </div>
@@ -137,7 +137,7 @@ require_once "include/header.php";
             <table class="table  table-hover">
         <thead>
             <tr class="bg-dark">
-            <th scope="col">S.No.</th>
+            <th scope="col">No.</th>
             <th scope="col">Id Karyawan</th>
             <th scope="col">Name Karyawan</th>
             <th scope="col">Email Karyawan</th>

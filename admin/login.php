@@ -38,13 +38,13 @@
       if( $_SERVER["REQUEST_METHOD"] == "POST" ){
          
         if( empty($_REQUEST["email"]) ){
-         $email_err = " <p style='color:red'> * Email Can Not Be Empty</p> ";
+         $email_err = " <p style='color:red'> * Email Tidak Boleh Kosong!</p> ";
         }else {
          $email = $_REQUEST["email"];
         }
 
         if ( empty($_REQUEST["password"]) ){
-         $pass_err =  " <p style='color:red'> * Password Can Not Be Empty</p> ";
+         $pass_err =  " <p style='color:red'> * Password Tidak Boleh Kosong!!</p> ";
         }else {
           $pass = $_REQUEST["password"];
         }
@@ -111,7 +111,7 @@
                                     <div class="form-group">
                                         <input type="submit" value="Log-In" class="btn btn-primary btn-lg w-100 " name="signin" >
                                     </div>
-                                <p class=" login-form__footer">Not a admin? <a href="../employee/login.php" class="text-primary">Log-In </a>as Employee now</p>
+                                <p class=" login-form__footer">Bukan Admin?? <a href="../employee/login.php" class="text-primary">Log-In </a>Sebagai Karyawan</p>
                                 </form>
                             </div>
                         </div>

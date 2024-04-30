@@ -31,13 +31,13 @@ table {
     <h4 class="text-center pb-3">Leave Status</h4>
     <table style="width:100%" class="table-hover text-center ">
     <tr class="bg-dark">
-        <th>S.No.</th>
-        <th>Starting Date</th>
-        <th>Ending Date</th> 
-        <th>Total Days</th>
-        <th>Reason</th>
+        <th>No.</th>
+        <th>Tanggal Mulai</th>
+        <th>Tanggal Selesai</th> 
+        <th>Total Hari</th>
+        <th>Alasan</th>
         <th>Status</th>
-        <th>Action</th>
+        <th>Aksi</th>
 
     </tr>
     <?php 

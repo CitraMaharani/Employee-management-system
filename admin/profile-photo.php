@@ -26,10 +26,10 @@ require_once "include/header.php";
                     echo "<script>
                     $(document).ready( function(){
                         $('#showModal').modal('show');
-                        $('#addMsg').text('Profile Photo Update Succefully!!');
+                        $('#addMsg').text('Foto Profil Berhasil Diedit!!');
                         $('#linkBtn').attr('href', 'profile.php');
-                        $('#linkBtn').text('Check Profile');
-                        $('#closeBtn').text('Upload Again');
+                        $('#linkBtn').text('Periksa Profil');
+                        $('#closeBtn').text('Edit Lagi');
                     })
                 </script>
                 ";
@@ -39,10 +39,10 @@ require_once "include/header.php";
         } else{ echo "<script>
             $(document).ready( function(){
                 $('#showModal').modal('show');
-                $('#addMsg').text('Only JPG, PNG and JPEG files allowed!!');
+                $('#addMsg').text('Hanya Format JPG, PNG and JPEG file Yang Diterima!!');
                 $('#linkBtn').attr('href', 'profile.php');
                 $('#linkBtn').hide();
-                $('#closeBtn').text('Ok, Understood');
+                $('#closeBtn').text('Ok, Dimengerti');
             })
         </script>
         ";
@@ -60,10 +60,10 @@ require_once "include/header.php";
                     <div class="form-input-content">
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5 shadow">                       
-                                    <h4 class="text-center">Change Profile photo</h4>
+                                    <h4 class="text-center">Ganti Foto Profil</h4>
                                     <form method="POST" enctype="multipart/form-data" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                                         <div class="form-group">
-                                            <label >Select Image : </label>
+                                            <label >Pilih Foto : </label>
                                             <input type="file" name="dp" class="form-control">
                                            
                                         </div>
@@ -74,7 +74,7 @@ require_once "include/header.php";
                                         <input type="submit" value="Save Changes" class="btn btn-primary w-20 " name="save_changes" >        
                                             </div>
                                             <div class="input-group">
-                                                <a href="profile.php" class="btn btn-primary w-20">Close</a>
+                                                <a href="profile.php" class="btn btn-primary w-20">Tutup</a>
                                             </div>
                                         </div>
                                   </form>

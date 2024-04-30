@@ -10,19 +10,19 @@ require_once "include/header.php";
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         if(empty($_REQUEST["old_pass"])){
-            $old_passErr = " <p style='color:red'>* Old Password Is required </p>";
+            $old_passErr = " <p style='color:red'>* Isi Password Lama </p>";
         }else{
             $old_pass = trim($_REQUEST["old_pass"]);
         }
         
         if(empty($_REQUEST["new_pass"])){
-            $new_passErr = " <p style='color:red'>* New Password Is required </p>";
+            $new_passErr = " <p style='color:red'>* Isi Password Baru </p>";
         }else{
             $new_pass = trim($_REQUEST["new_pass"]);
         }
 
         if(empty($_REQUEST["confirm_pass"])){
-            $confirm_passErr = " <p style='color:red'>* Please Confirm new Password! </p>";
+            $confirm_passErr = " <p style='color:red'>* Konfirmasi Password Baru Anda! </p>";
         }else{
             $confirm_pass = trim($_REQUEST["confirm_pass"]);
         }
@@ -43,7 +43,7 @@ require_once "include/header.php";
                         session_destroy();
                         echo "<script>
                         $(document).ready(function() {
-                            $('#addMsg').text( 'Password Updated successfully! Log in With New Password');
+                            $('#addMsg').text( 'Password Berhasil Diganti! Masuk Dengan Password Baru');
                             $('#linkBtn').attr('href','login.php');
                             $('#linkBtn').text('OK, Understood');
                             $('#modalHead').hide();
@@ -54,11 +54,11 @@ require_once "include/header.php";
                     }
                     
                 }else{
-                    $confirm_passErr = "<p style='color:red'>* Confirm did not matched new Password! </p>";
+                    $confirm_passErr = "<p style='color:red'>* Konfirmasi Tidak Sesuai Dengan Password Baru! </p>";
                 }
 
             }else{
-               $old_passErr = " <p style='color:red'>*Sorry! Old Password is Wrong </p> ";
+               $old_passErr = " <p style='color:red'>*Upss..! Password Lama Salah </p> ";
             }
         }
     }
@@ -73,21 +73,21 @@ require_once "include/header.php";
                     <div class="form-input-content">
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5 shadow">                       
-                                    <h4 class="text-center">Change Password</h4>
+                                    <h4 class="text-center">Ganti Password</h4>
                                     <form method="POST" action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                                         <div class="form-group">
-                                            <label >Old Password : </label>
+                                            <label >Password Lama : </label>
                                             <input type="password" name="old_pass" class="form-control">
                                             <?php echo $old_passErr; ?>
                                         </div>
                                         <div class="form-group">
-                                            <label >New Password : </label>
+                                            <label >Password Baru : </label>
                                             <input type="password" name="new_pass" class="form-control">
                                             <?php echo $new_passErr; ?>
 
                                         </div>
                                         <div class="form-group">
-                                            <label >Confirm Password : </label>
+                                            <label >Konfirmasi Password : </label>
                                             <input type="password" name="confirm_pass" class="form-control">
                                             <?php echo $confirm_passErr; ?>
 
@@ -98,7 +98,7 @@ require_once "include/header.php";
                                         <input type="submit" value="Save Changes" class="btn btn-primary w-20 " name="save_changes" >        
                                             </div>
                                             <div class="input-group">
-                                                <a href="profile.php" class="btn btn-primary w-20">Close</a>
+                                                <a href="profile.php" class="btn btn-primary w-20">Tutup</a>
                                             </div>
                                         </div>
                                   </form>

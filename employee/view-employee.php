@@ -32,7 +32,7 @@ table {
     <h4 class="text-center pb-3">Semua Karyawan</h4>
     <table style="width:100%" class="table-hover text-center ">
     <tr class="bg-dark">
-        <th>S.No.</th>
+        <th>No.</th>
         <th>Id karyawan</th>
         <th>Nama</th>
         <th>Email</th> 

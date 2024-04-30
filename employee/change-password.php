@@ -98,7 +98,7 @@ require_once "include/header.php";
                                         <input type="submit" value="Save Changes" class="btn btn-primary w-20 " name="save_changes" >        
                                             </div>
                                             <div class="input-group">
-                                                <a href="profile.php" class="btn btn-primary w-20">Close</a>
+                                                <a href="profile.php" class="btn btn-primary w-20">Tutup</a>
                                             </div>
                                         </div>
                                   </form>

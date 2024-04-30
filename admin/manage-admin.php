@@ -28,16 +28,16 @@ table {
 
 <div class="container bg-white shadow">
     <div class="py-4 mt-5"> 
-    <div class='text-center pb-2'><h4>Manage Admin</h4></div>
+    <div class='text-center pb-2'><h4>Atur Admin</h4></div>
     <table style="width:100%" class="table-hover text-center ">
     <tr class="bg-dark">
-        <th>S.No.</th>
-        <th>Name</th>
+        <th>No.</th>
+        <th>Nama</th>
         <th>Email</th> 
-        <th>Gender</th>
-        <th>Date of Birth</th>
-        <th>Age</th>
-        <th>Action</th>
+        <th>Jenis Kelamin</th>
+        <th>Tanggal Lahir</th>
+        <th>Umur</th>
+        <th>Aksi</th>
     </tr>
     <?php 
     

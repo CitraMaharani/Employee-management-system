@@ -41,10 +41,11 @@ require_once "include/header.php";
             <img src="upload/<?php if(!empty($dp)){ echo $dp; }else{ echo "1.jpg"; } ?>" class="rounded img-fluid  card-img-top"  style="height: 300px "  alt="...">
                 <div class="card-body">
                 <h2 class="text-center mb-4"><?php echo $name; ?> </h2>
+                    <p class="card-text">Nama: <?php echo $name ?> </p>
                     <p class="card-text">Email: <?php echo $_SESSION["email"] ?> </p>
-                    <p class="card-text">Gender: <?php echo $gender ?> </p>
-                    <p class="card-text">Date of Birth: <?php echo $dob ?> </p>
-                    <p class="card-text">Age: <?php if( $dob != "Not Defined"){  
+                    <p class="card-text">Jenis Kelamin: <?php echo $gender ?> </p>
+                    <p class="card-text">Tanggal Lahir: <?php echo $dob ?> </p>
+                    <p class="card-text">Umur: <?php if( $dob != "Not Defined"){  
                                                     $date1=date_create($dob);
                                                     $date2=date_create("now");
                                                     $diff=date_diff($date1,$date2);
@@ -52,9 +53,9 @@ require_once "include/header.php";
                     </p>
                     
                     <p class="text-center">
-                    <a href="edit-profile.php" class="btn btn-outline-primary">Edit Profile</a>
-                    <a href="change-password.php" class="btn btn-outline-primary">Change Password</a>
-                    <a href="profile-photo.php" class="mt-2 btn btn-outline-primary">Change profile photo</a>
+                    <a href="edit-profile.php" class="btn btn-outline-primary">Edit Profil</a>
+                    <a href="change-password.php" class="btn btn-outline-primary">Ganti Password</a>
+                    <a href="profile-photo.php" class="mt-2 btn btn-outline-primary">Ganti Foto Profil</a>
                     </p>
                 </div>
             </div>

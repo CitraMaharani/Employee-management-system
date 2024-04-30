@@ -87,7 +87,7 @@
                 $r = mysqli_query($conn , $sql_select_query);
 
                 if( mysqli_num_rows($r) > 0 ){
-                    $emailErr = "<p style='color:red'> * Email Already Register</p>";
+                    $emailErr = "<p style='color:red'> * Email Sudah Dipakai!</p>";
                 } else{
                    
 
@@ -99,9 +99,9 @@
                             $('#showModal').modal('show');
                             $('#modalHead').hide();
                             $('#linkBtn').attr('href', 'manage-employee.php');
-                            $('#linkBtn').text('View Employees');
-                            $('#addMsg').text('Profile Edit Successfully!');
-                            $('#closeBtn').text('Edit Again?');
+                            $('#linkBtn').text('Tampilkan Karyawan');
+                            $('#addMsg').text('Edit Profil Berhasi!');
+                            $('#closeBtn').text('Edit Lagi?');
                         })
                      </script>
                      ";
@@ -124,7 +124,7 @@
                     <div class="form-input-content">
                         <div class="card login-form mb-0">
                             <div class="card-body pt-4 shadow">                       
-                                    <h4 class="text-center">Edit Employee profile</h4>
+                                    <h4 class="text-center">Edit Profil Karyawan</h4>
                                 <form method="POST" action=" <?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                             
                                 <div class="form-group">
@@ -147,7 +147,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label >Gaji POkok :</label>
+                                    <label >Gaji Pokok :</label>
                                     <input type="number" class="form-control" value="<?php echo $salary; ?>" name="salary" >  
                                     <?php echo $salaryErr; ?>            
                                 </div>
@@ -163,21 +163,21 @@
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Male" ){ echo "checked"; } ?>  value="Male"  selected>
-                                    <label class="form-check-label" >Laki-laki</label>
+                                    <label class="form-check-label" >Pria</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Female" ){ echo "checked"; } ?>  value="Female">
-                                    <label class="form-check-label" >wanita</label>
+                                    <label class="form-check-label" >Wanita</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="gender" <?php if($gender == "Other" ){ echo "checked"; } ?>  value="Other">
-                                    <label class="form-check-label" >Other</label>
+                                    <label class="form-check-label" >Lainnya</label>
                                 </div>
 
                                
                                 <br>
 
-                                <button type="submit" class="btn btn-primary btn-block">Add</button>
+                                <button type="submit" class="btn btn-primary btn-block">Tambah</button>
                                   </form>
                             </div>
                         </div>

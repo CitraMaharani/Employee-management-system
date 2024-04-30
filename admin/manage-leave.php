@@ -29,10 +29,10 @@ table {
 
 <div class="container bg-white shadow">
     <div class="py-4 mt-5"> 
-    <h4 class="text-center pb-3">Leave Requests</h4>
+    <h4 class="text-center pb-3">Pengajuan Cuti</h4>
     <table style="width:100%" class="table-hover text-center ">
     <tr class="bg-dark">
-        <th>S.No.</th>
+        <th>No.</th>
         <th>Email Karyawan</th>
         <th>Tanggal mulai</th>
         <th>Tanggal Berakhir</th> 
@@ -63,8 +63,8 @@ table {
             ?></td>
         <td><?php echo $reason; ?></td> 
 
-        <td><?php  echo "<a href='accept-leave.php?id={$id}' class='btn btn-sm btn-outline-primary mr-2'>Accept </a>" ;
-                    echo "<a href='cancel-leave.php?id={$id}' class='btn btn-sm btn-outline-danger'>Cancel </a>" ;?>  
+        <td><?php  echo "<a href='accept-leave.php?id={$id}' class='btn btn-sm btn-outline-primary mr-2'>Terima </a>" ;
+                    echo "<a href='cancel-leave.php?id={$id}' class='btn btn-sm btn-outline-danger'>Tolak </a>" ;?>  
         </td> 
 
     <?php 
@@ -75,8 +75,8 @@ table {
             $(document).ready( function(){
                 $('#showModal').modal('show');
                 $('#linkBtn').hide();
-                $('#addMsg').text('No Leave Requests Found');
-                $('#closeBtn').text('Ok, Understood');
+                $('#addMsg').text('Tidak Status Cuti');
+                $('#closeBtn').text('Ok, Dimengerti');
             })
          </script>
          ";

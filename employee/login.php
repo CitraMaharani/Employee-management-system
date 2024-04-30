@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="../resorce/css/style.css" rel="stylesheet">
 
-    <title>Sistem Manajemen Cuti Karyawan</title>
+    <title>Sistem Monitoring Cuti Karyawan</title>
     <style>
     body, html {
     height: 100%;
@@ -106,7 +106,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
                                     <div class="form-group">
                                         <input type="submit" value="Log-In" class="btn btn-primary btn-lg w-100 " name="signin" >
                                     </div>
-                                <p class=" login-form__footer">Bukan karyawan? <a href="../admin/login.php" class="text-primary">Log-In </a>as Admin now</p>
+                                <p class=" login-form__footer">Bukan karyawan? <a href="../admin/login.php" class="text-primary">Log-In </a>sebagai Admin</p>
                                 </form>
                             </div>
                         </div>

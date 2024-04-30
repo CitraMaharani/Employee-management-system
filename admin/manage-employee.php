@@ -33,10 +33,10 @@ table {
 
 <div class="container bg-white shadow">
     <div class="py-4 mt-5"> 
-    <div class='text-center pb-2'><h4>Manage Employees</h4></div>
+    <div class='text-center pb-2'><h4>Atur Karyawan</h4></div>
     <table style="width:100%" class="table-hover text-center ">
     <tr class="bg-dark">
-        <th>S.No.</th>
+        <th>No.</th>
         <th>ID Karyawan</th>
         <th>Nama</th>
         <th>Email</th> 
@@ -44,7 +44,7 @@ table {
         <th>Tanggal lahir</th>
         <th>Usia di tahun ini</th>
         <th>Gaji </th>
-        <th>Action</th>
+        <th>Aksi</th>
     </tr>
     <?php 
     

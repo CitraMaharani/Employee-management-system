@@ -13,7 +13,7 @@
  
 <div class="footer hide">
             <div class="copyright">
-                <p>Copyright &copy; Designed & Developed by Roin</a> 2023</p>
+                <p>Copyright &copy; Homegroup A</a> 2024</p>
             </div>
         </div>
         <!--**********************************

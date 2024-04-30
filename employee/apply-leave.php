@@ -63,22 +63,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5 shadow">
                               
-                                    <h4 class="text-center">Apply For Leave</h4>
+                                    <h4 class="text-center">Ajukan Cuti</h4>
                                 <form method="POST" action=" <?php htmlspecialchars($_SERVER['PHP_SELF']) ?>">
                                 
                                     <div class="form-group">
-                                        <label >Reason :</label>
+                                        <label >Alasan :</label>
                                         <input type="text" class="form-control" value="<?php echo $reason; ?> " name="reason" >  
                                         <?php echo $reasonErr; ?>           
                                     </div>
 
                                     <div class="form-group">
-                                        <label >Staring Date :</label>
+                                        <label >Tanggal Mulai :</label>
                                         <input type="date" class="form-control"  value="<?php echo $startdate; ?>"  name="startDate" >
                                         <?php echo $startdateErr; ?>
                                     </div>
                                     <div class="form-group">
-                                        <label >Last Date :</label>
+                                        <label >Tanggal Selesai :</label>
                                         <input type="date" class="form-control"  value="<?php echo $lastdate; ?>"  name="lastDate" >
                                         <?php echo $lastdateErr; ?>
                                     </div>

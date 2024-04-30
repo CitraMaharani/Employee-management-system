@@ -58,7 +58,7 @@ require_once "include/header.php";
         <div class="col-4">
             <div class="card shadow " style="width: 18rem;">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center">Admins</li>
+                    <li class="list-group-item text-center">Admin</li>
                     <li class="list-group-item">Total Admin : <?php echo mysqli_num_rows($total_admins); ?> </li>
                     <li class="list-group-item text-center"><a href="manage-admin.php"><b>View All Admins</b></a></li>
                 </ul>
@@ -99,11 +99,11 @@ require_once "include/header.php";
     </div> -->
     <div class="row mt-5 bg-white shadow "> 
     <div class="col-12">
-            <div class=" text-center my-3 "> <h4>Dewan Pimpinan Karyawan</h4> </div>
+            <div class=" text-center my-3 "> <h4>Manager</h4> </div>
             <table class="table  table-hover">
         <thead>
             <tr class="bg-dark">
-            <th scope="col">S.No.</th>
+            <th scope="col">No.</th>
             <th scope="col">Id Karyawan</th>
             <th scope="col">Name Karyawan</th>
             <th scope="col">Email Karyawan</th>

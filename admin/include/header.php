@@ -80,7 +80,7 @@
                     </div>
                 </div>
                <div class="text-center">
-                <h2 class="pt-3"> Sistem Manajemen Cuti Karyawan </h2>
+                <h2 class="pt-3"> Sistem monitoring Cuti Karyawan </h2>
                  </div>
                 
             </div>
@@ -105,11 +105,11 @@
 
                     <li>
                     <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Employee</span>
+                            <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Karyawan</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./add-employee.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Employee</span></a></li>
-                            <li><a href="./manage-employee.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Employee</span></a></li>
+                            <li><a href="./add-employee.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Tambahkan Karyawan</span></a></li>
+                            <li><a href="./manage-employee.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Kelola Karyawan</span></a></li>
                             <!-- <li><a href="./"> <i class="fa fa-bar-chart menu-icon"></i><span class="nav-text">Salary Table</span></a></li> -->
 
                         </ul>
@@ -120,14 +120,14 @@
                             <i class="fa fa-address-card-o menu-icon"></i><span class="nav-text">Admin</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="./add-admin.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Add Admin</span></a></li>
-                            <li><a href="./manage-admin.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Manage Admins</span></a></li>
+                            <li><a href="./add-admin.php"> <i class="icon-plus menu-icon"></i><span class="nav-text">Tambahkan Admin</span></a></li>
+                            <li><a href="./manage-admin.php"> <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Kelola Admin</span></a></li>
                         </ul>
                     </li>
                     
                     <li>
                         <a href="./manage-leave.php" >
-                            <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Mengelola Cuti Karyawan</span>
+                            <i class="fa fa-tasks menu-icon"></i><span class="nav-text">Kelola Cuti Karyawan</span>
                         </a>
                     </li>
                     <li>
@@ -156,25 +156,25 @@
 
 
         <div class="modal fade" id="showModal" data-backdrop="static" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div id="modalHead" class="modal-header">
-                    <button id="modal_cross_btn" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span  aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <p id="addMsg" class="text-center font-weight-bold"></p>
-                </div>
-                <div class="modal-footer ">
-                    <div class="mx-auto">
-                        <a type="button" id="linkBtn" href="#" class="btn btn-primary" >Tambahkan Pengeluaran Untuk Hari Ini</a>
-                        <a type="button" id="closeBtn" href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div id="modalHead" class="modal-header">
+                        <button id="modal_cross_btn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span  aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="addMsg" class="text-center font-weight-bold"></p>
+                    </div>
+                    <div class="modal-footer ">
+                        <div class="mx-auto">
+                            <a type="button" id="linkBtn" href="#" class="btn btn-primary" >Tambahkan Pengeluaran Untuk Hari Ini</a>
+                            <a type="button" id="closeBtn" href="#" data-dismiss="modal" class="btn btn-primary">Close</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
             
             <!-- row -->
 
